@@ -426,6 +426,7 @@ img {
     height: 40px;
     
 }
+
 .footer-social-link {
     display: flex;
     width: 100%;
@@ -434,4 +435,8 @@ img {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: #31D0AA;
 }
