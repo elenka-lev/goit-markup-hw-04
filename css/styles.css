@@ -61,6 +61,7 @@ img {
     margin-right: 40px; 
 }
 .header-menu-link {
+    position: relative;
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -76,6 +77,26 @@ img {
 .header-menu-link:focus {
     color: #404bbf;
 }
+.header-menu-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 4px;
+    background-color: #404bbf;
+    transition: width 0.3s, left 0.3s;
+    transform: translateX(-50%) translateY(-50%);
+}
+.header-menu-link:hover::after {
+    content:"";
+    width: 100%;
+}
+.header-menu-link:focus::after {
+    content: "";
+    width: 100%;
+}
+
 .contacts {
     font-style: normal;
 }
@@ -109,6 +130,10 @@ img {
 /*First section Effective Solutions for Your Business*/
 .hero {
     background-color: #2e2f42;
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 188px 0;
 }
 .hero-title {
