@@ -302,7 +302,7 @@ img {
     justify-content: space-between;
 }
 .team-descr {
-    margin-bottom: 32px;
+    margin-bottom: 8px;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -337,9 +337,7 @@ img {
 .team-social-link:focus {
     background-color: #404bbf;;
 }
-/* .team-svg {
-    fill: #f4f4fd;
-} */
+
 
 /*Fourth section*/
 .portfolio {
@@ -400,7 +398,6 @@ img {
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #434455;
-    margin-bottom: 48px;
 }
 
 
